@@ -46,7 +46,7 @@ module.exports = {
     //chunk分离
     splitChunks: {
       cacheGroups: {
-        //将第三方库提取到单独的vendors chunk中，因为它们很少像本地代码一样平凡改动
+        //将第三方库提取到单独的vendors chunk中，因为它们很少像本地代码一样频繁改动
         vendor: {
           test: /[\\/]node_modules[\\/]/,
           name: 'vendors',
