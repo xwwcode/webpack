@@ -1,0 +1,14 @@
+{
+  "target": "es5",
+  "allowJs": true,
+  "compilerOptions": {
+    "lib": ["ESNext", "DOM"],
+    "baseUrl": "./",
+    "paths": {
+      //解决项目中使用@作为路径别名，导致VSCODE无法跳转文件的问题
+      "@/*": ["./src/*"]
+    }
+  },
+  "exclude": ["node_modules"],
+  "include": ["src/**/*"]
+}
